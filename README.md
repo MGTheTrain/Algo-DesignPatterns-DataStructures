@@ -4,6 +4,7 @@
 
 + [Summary](#summary)
 + [Features](#features)
++ [References](#references)
 + [Getting started](#getting-started)
 
 ## Summary
