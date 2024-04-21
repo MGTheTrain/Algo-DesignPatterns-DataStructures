@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [Feature] - Basic data structures including their common operations (insertion, deletion, search) and associated complexities along with practical applications in Python
+- [Feature] - Basic data structures including their common operations (insertion, deletion, search) and practical applications in Python
 
 ### Updated
 
