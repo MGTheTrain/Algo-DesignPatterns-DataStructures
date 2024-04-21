@@ -21,7 +21,7 @@
 cmake_minimum_required(VERSION 3.10)
 set(TARGET Algo-DesignPatterns-DataStructures)
 project(${TARGET})   
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 option(BUILD_DATA_STRUCTURE_SAMPLES "Compile source files dealing with data structures" ON)
 option(BUILD_DESIGN_PATTERN_SAMPLES "Compile source files dealing with design patterns" ON)
