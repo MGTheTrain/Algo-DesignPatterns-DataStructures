@@ -31,8 +31,6 @@ Curated list of design patterns, data structures, array sorting algorithms and t
 ## Features
 
 - [x] Coding design patterns for design principles (e.g. SOLID) and their use cases in C++
-- [ ] ~~Efficient array sorting algorithms in terms of complexity in C++~~
-- [ ] ~~Basic data structures including their common operations (insertion, deletion, search) and associated complexities along with practical applications in C++~~
 - [ ] Coding design patterns for design principles (e.g. SOLID) and their use cases in Python
 - [ ] Efficient array sorting algorithms in terms of complexity in Python
 - [ ] Basic data structures including their common operations (insertion, deletion, search) and associated complexities along with practical applications in Python
