@@ -20,7 +20,7 @@ public:
  */
 class Client {
 private:
-    std::unique_ptr<Service> service; /**< Pointer to the Service object */
+    std::unique_ptr<Service> service;
 
 public:
     /**

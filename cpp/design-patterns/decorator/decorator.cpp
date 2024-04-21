@@ -31,7 +31,7 @@ public:
  */
 class Decorator : public Component {
 protected:
-    std::shared_ptr<Component> component; /**< Pointer to the Component object */
+    std::shared_ptr<Component> component;
 
 public:
     /**

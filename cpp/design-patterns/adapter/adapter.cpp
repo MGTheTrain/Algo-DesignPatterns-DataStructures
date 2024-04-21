@@ -35,7 +35,7 @@ public:
  */
 class Adapter : public Target {
 private:
-    std::unique_ptr<Adaptee> adaptee; /**< Pointer to the Adaptee object */
+    std::unique_ptr<Adaptee> adaptee;
 
 public:
     /**

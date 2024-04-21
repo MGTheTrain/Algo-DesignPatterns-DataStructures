@@ -23,7 +23,7 @@ public:
  */
 class Subject {
 private:
-    std::vector<std::shared_ptr<Observer>> observers; /**< Vector to hold shared pointers to observers */
+    std::vector<std::shared_ptr<Observer>> observers;
 
 public:
     /**

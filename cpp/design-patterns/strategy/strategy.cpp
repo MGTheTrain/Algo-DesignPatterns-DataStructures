@@ -48,7 +48,7 @@ public:
  */
 class Context {
 private:
-    std::unique_ptr<Strategy> strategy; /**< Pointer to the Strategy object */
+    std::unique_ptr<Strategy> strategy;
 
 public:
     /**
