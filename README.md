@@ -15,13 +15,13 @@ Curated list of design patterns, data structures, array sorting algorithms and t
 
 | Design Pattern         | Practical Use Cases                                            | SOLID Principles and Other Relevant Principles           | Category    |
 |------------------------|----------------------------------------------------------------|----------------------------------------------------------|-------------|
-| Adapter                | Integrating incompatible interfaces, adapting legacy code      | Dependency Inversion Principle (DIP)                     | Structural  |
-| Decorator              | Adding functionality to objects dynamically without changing existing logic                   | Open/Closed Principle (OCP)                              | Structural  |
-| Dependency Injection   | Decoupling components, facilitating testing and flexibility    | Dependency Inversion Principle (DIP)                     | Behavioral |
-| Observer               | Implementing event handling, building distributed systems      | Single Responsibility Principle (SRP)                    | Behavioral |
-| Strategy               | Encapsulating algorithms enabling runtime algorithm selection instead of having long if-else statements to determine which algorithm to use  | Open/Closed Principle (OCP)                              | Behavioral |
-| Singleton              | Managing resources centrally, ensuring single instance         | Single Responsibility Principle (SRP)                    | Creational |
-| Builder                | Constructing complex objects step by step, maintaining clarity | Single Responsibility Principle (SRP)                    | Creational |
+| Adapter                | Commonly used when integrating systems with incompatible interfaces or when adapting legacy code to work with modern components      | Dependency Inversion Principle (DIP)                     | Structural  |
+| Decorator              | Widely used for adding functionality to objects dynamically without altering their existing logic, promoting code reuse and flexibility | Open/Closed Principle (OCP)                              | Structural  |
+| Dependency Injection   | Essential for decoupling components, facilitating testing, and improving flexibility by removing hard-coded dependencies | Dependency Inversion Principle (DIP)                     | Behavioral |
+| Observer               |  Frequently employed for implementing event handling mechanisms and building distributed systems that require communication between components | Single Responsibility Principle (SRP)                    | Behavioral |
+| Strategy               | Valuable for encapsulating algorithms and enabling runtime algorithm selection, providing an alternative to long if-else statements and promoting code maintainability | Open/Closed Principle (OCP)                              | Behavioral |
+| Singleton              |  Often used for managing resources centrally and ensuring a single instance of a class throughout the application | Single Responsibility Principle (SRP)                    | Creational |
+| Builder                |  Commonly utilized for constructing complex objects step by step, improving clarity and maintainability in code that deals with object creation | Single Responsibility Principle (SRP)                    | Creational |
 
 
 ## References
