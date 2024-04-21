@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <memory>
+#include <algorithm>
 
 /**
  * @brief The Observer interface declares the update method, which is called by
@@ -40,11 +41,14 @@ public:
      * @param observer Shared pointer to the observer object
      */
     void detach(const std::shared_ptr<Observer>& observer) {
-        auto it = std::find(observers.begin(), observers.end(), observer);
+        auto it = std::find_if(observers.begin(), observers.end(), [&](const auto& obs) {
+            return obs.get() == observer.get();
+        });
         if (it != observers.end()) {
             observers.erase(it);
         }
     }
+
 
     /**
      * @brief Notifies all observers when the subject's state changes.
