@@ -17,7 +17,7 @@ public:
     static std::shared_ptr<Singleton> getInstance() {
         std::lock_guard<std::mutex> lock(mutex_);
         if (!instance) {
-            instance = std::make_shared<Singleton>();
+            instance = std::shared_ptr<Singleton>(new Singleton);
         }
         return instance;
     }
@@ -34,13 +34,12 @@ private:
      * @brief Private constructor to prevent instantiation of Singleton.
      */
     Singleton() {}
-
-    static std::shared_ptr<Singleton> instance; /**< The singleton instance. */
-    static std::mutex mutex_; /**< Mutex for thread safety. */
+    static std::shared_ptr<Singleton> instance; 
+    static std::mutex mutex_; 
 };
 
-std::shared_ptr<Singleton> Singleton::instance = nullptr; /**< Initialize the singleton instance. */
-std::mutex Singleton::mutex_; /**< Initialize the mutex for thread safety. */
+std::shared_ptr<Singleton> Singleton::instance = nullptr; 
+std::mutex Singleton::mutex_; 
 
 int main() {
     std::vector<std::thread> threads;
