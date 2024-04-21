@@ -20,9 +20,3 @@ build:
 .PHONY: clean
 clean:
 	@rm -rf $(BUILD_DIR)
-
-# Use different clean command on Windows
-ifeq ($(OS),Windows_NT)
-	clean:
-		@rd /s /q $(BUILD_DIR)
-endif
