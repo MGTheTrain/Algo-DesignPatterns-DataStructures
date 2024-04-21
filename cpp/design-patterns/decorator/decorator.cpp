@@ -121,7 +121,7 @@ int main() {
 
     std::cout << "\n";
 
-    std::shared_ptr<Component> anotherDecorated = std::make_shared<AnotherConcreteDecorator>(component);
+    std::shared_ptr<Component> anotherDecorated = std::make_shared<AnotherConcreteDecorator>(decorated);
     anotherDecorated->operation();
 
     return 0;
