@@ -29,4 +29,4 @@ run-executable:
 # Target: run-python-script
 .PHONY: run-python-script
 run-python-script:
-	@python3 python/$(arg1)/$(arg2)/$(arg2).py
+	@python3 python/$(arg1)/$(arg2).py
