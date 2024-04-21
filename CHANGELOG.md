@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 21-04-2024
+
+### Added
+
+- [Feature] - Basic data structures including their common operations (insertion, deletion, search) and practical applications in Python
+
+### Updated
+
+- Move python scripts to `design-patterns` folder 
+
 ## [0.2.0] - 21-04-2024
 
 ### Added

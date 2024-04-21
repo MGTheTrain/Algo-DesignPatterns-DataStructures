@@ -145,13 +145,14 @@ int main() {
 
     std::cout << "\n";
 
+    std::shared_ptr<Component> anotherDecorated2 = std::make_shared<AnotherConcreteDecorator2>(anotherDecorated);
+    anotherDecorated2->operation();
+    
+    std::cout << "\n";
+
     std::shared_ptr<Component> anotherDecorated = std::make_shared<AnotherConcreteDecorator>(decorated);
     anotherDecorated->operation();
 
-    std::cout << "\n";
-
-    std::shared_ptr<Component> anotherDecorated2 = std::make_shared<AnotherConcreteDecorator2>(anotherDecorated);
-    anotherDecorated2->operation();
 
     return 0;
 }
