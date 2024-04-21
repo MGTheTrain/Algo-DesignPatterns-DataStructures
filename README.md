@@ -23,10 +23,13 @@ Curated list of design patterns, data structures, array sorting algorithms and t
 
 ## Getting started
 
-### C++
+### Preconditions
 
-TBD
+- If your IDE supports it, install [Dev Containers extension](https://code.visualstudio.com/docs/devcontainers/containers)
+- **(Optionally)** Download a [Python Release](https://www.python.org/downloads/) and a [CMake release](https://cmake.org/download/) 
+- `make` cli tool
 
-### Python
+**NOTE:** On Windows you would preferably utilize the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-TBD
+### Makefile
+
