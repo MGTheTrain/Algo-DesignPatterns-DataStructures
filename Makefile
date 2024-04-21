@@ -20,3 +20,13 @@ build:
 .PHONY: clean
 clean:
 	@rm -rf $(BUILD_DIR)
+
+# Target: run-executable
+.PHONY: run-executable
+run-executable:
+	@./build/$(arg1)/$(arg2)/$(arg2)
+
+# Target: run-python-script
+.PHONY: run-python-script
+run-python-script:
+	@python3 python/$(arg1)/$(arg2)/$(arg2).py
