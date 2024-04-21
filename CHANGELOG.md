@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 21-04-2024
+
+### Added
+
+- [Feature] - Efficient array sorting algorithms in terms of complexity in Python
+
 ## [0.3.0] - 21-04-2024
 
 ### Added

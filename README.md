@@ -46,6 +46,26 @@ Curated list of design patterns, data structures, array sorting algorithms and t
 |                   | - Implementing symbol tables in compilers or interpreters.                                                             | -                                                    | -                                                    |
 |                   | - Handling collisions using techniques like chaining or open addressing.                                              | -                                                    | -                                                    |
 
+### Array sorting algorithms
+
+| Algorithm   | Description                                | C++ Implementation                           | Python Implementation |
+|-------------|--------------------------------------------|----------------------------------------------|-----------------------|
+| Heap Sort   | Sorts an array using the heap data structure | `std::make_heap`, `std::sort_heap`           | / |
+| Merge Sort  | Sorts an array using the merge algorithm   | `std::merge_sort`                            | / |
+| Quick Sort  | Sorts an array using the quicksort algorithm | `std::sort` (uses quicksort internally)      | / |
+
+**NOTE:** "Python has built-in sorting algorithms like sorted() and list.sort(), which typically use the Timsort algorithm. While Timsort is a hybrid sorting algorithm based on merge sort and insertion sort, it's optimized for sorting lists in Python."
+
+```Python
+# Using sorted() function
+arr = [3, 1, 4, 1, 5, 9, 2, 6]
+sorted_arr = sorted(arr)  # Returns a new sorted list
+print(sorted_arr)
+
+# Using list.sort() method
+arr.sort()  # Sorts the list in place
+print(arr)
+```
 
 ## References
 
@@ -55,7 +75,7 @@ Curated list of design patterns, data structures, array sorting algorithms and t
 
 - [x] Coding design patterns for design principles (e.g. SOLID) and their use cases in C++
 - [x] Coding design patterns for design principles (e.g. SOLID) and their use cases in Python
-- [ ] Efficient array sorting algorithms in terms of complexity in Python
+- [x] Efficient array sorting algorithms in terms of complexity in Python
 - [x] Basic data structures including their common operations (insertion, deletion, search) and  practical applications in Python
 
 ## Getting started
