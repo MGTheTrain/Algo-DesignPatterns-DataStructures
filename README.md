@@ -32,4 +32,15 @@ Curated list of design patterns, data structures, array sorting algorithms and t
 **NOTE:** On Windows you would preferably utilize the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) in order to utilize the `make` cli tool
 
 ### Makefile
-TBD
+
+To compile the C++ source files into executables, execute the following command:
+
+```sh
+make build
+```
+
+In order to remove build artifacts:
+
+```sh
+make clean
+```
