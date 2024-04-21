@@ -13,16 +13,16 @@ CMAKE_BUILD = $(CMAKE) --build $(BUILD_DIR)
 # Target: build
 .PHONY: build
 build:
-    @$(CMAKE) -B $(BUILD_DIR) -S $(SRC_DIR)
-    @$(CMAKE_BUILD)
+	@$(CMAKE) -B $(BUILD_DIR) -S $(SRC_DIR)
+	@$(CMAKE_BUILD)
 
 # Target: clean
 .PHONY: clean
 clean:
-    @rm -rf $(BUILD_DIR)
+	@rm -rf $(BUILD_DIR)
 
 # Use different clean command on Windows
 ifeq ($(OS),Windows_NT)
-    clean:
-        @rd /s /q $(BUILD_DIR)
+	clean:
+		@rd /s /q $(BUILD_DIR)
 endif
