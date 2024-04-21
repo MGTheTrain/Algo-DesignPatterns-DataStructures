@@ -69,8 +69,7 @@ make run-python-script arg1=<e.g. design-patterns> arg2=<e.g. adapter, decorator
 make run-python-script arg1=design-patterns arg2=builder
 ```
 
-
-In order to remove build artifacts:
+In order to remove build artifacts from C++ compilation:
 
 ```sh
 make clean
