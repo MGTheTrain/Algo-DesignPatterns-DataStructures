@@ -2,10 +2,6 @@
 #include <memory>
 
 /**
- * @note Adheres Interface Segregation Principle (ISP) in SOLID
- */
-
-/**
  * @brief The Target interface declares a method for the client to interact
  * with.
  */

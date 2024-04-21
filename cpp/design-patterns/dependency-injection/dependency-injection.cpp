@@ -2,10 +2,6 @@
 #include <memory>
 
 /**
- * @note Adheres Dependency Inversion Principle (DIP) in SOLID
- */
-
-/**
  * @brief The Service interface declares a method for executing a service.
  */
 class Service {

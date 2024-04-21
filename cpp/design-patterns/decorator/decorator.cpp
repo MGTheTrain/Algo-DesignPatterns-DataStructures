@@ -2,10 +2,6 @@
 #include <memory>
 
 /**
- * @note Adheres Single Responsibility Principle (SRP) in SOLID
- */
-
-/**
  * @brief The Component interface declares the operation method.
  */
 class Component {

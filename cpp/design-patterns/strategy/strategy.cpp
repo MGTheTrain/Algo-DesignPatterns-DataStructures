@@ -2,10 +2,6 @@
 #include <memory>
 
 /**
- * @note Adheres Open/Closed Principle (OCP) in SOLID
- */
-
-/**
  * @brief The Strategy interface declares a method for executing a strategy.
  */
 class Strategy {
