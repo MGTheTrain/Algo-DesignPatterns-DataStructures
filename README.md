@@ -53,7 +53,23 @@ To compile the C++ source files into executables, execute the following command:
 make build
 ```
 
-In order to remove build artifacts:
+To run C++ applications, execute:
+
+```sh
+make run-executable arg1=<e.g. design-patterns> arg2=<e.g. adapter, decorator, builder, dependency-injection, observer, singleton, strategy>
+# Example: Decorator sample app 
+make run-executable arg1=design-patterns arg2=decorator
+```
+
+To run Python scripts, execute:
+
+```sh
+make run-python-script arg1=<e.g. design-patterns> arg2=<e.g. adapter, decorator, builder, dependency-injection, observer, singleton, strategy>
+# Example: Builder sample app
+make run-python-script arg1=design-patterns arg2=builder
+```
+
+In order to remove build artifacts from C++ compilation:
 
 ```sh
 make clean

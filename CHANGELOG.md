@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 21-04-2024
+
+### Added
+
+- [Feature] - Coding design patterns for design principles (e.g. SOLID) and their use cases in Python
+
 ## [0.1.0] - 21-04-2024
 
 ### Added
