@@ -24,7 +24,7 @@ set(TARGET strategy)
 project(${TARGET})
 
 set(SOURCE_FILE 
-    strategy.cpp
+    ${TARGET}.cpp
 )   
 
 add_executable(${TARGET} ${SOURCE_FILE})

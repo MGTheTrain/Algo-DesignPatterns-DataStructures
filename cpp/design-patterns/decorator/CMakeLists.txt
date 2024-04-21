@@ -24,7 +24,7 @@ set(TARGET decorator)
 project(${TARGET})
 
 set(SOURCE_FILE 
-    decorator.cpp
+    ${TARGET}.cpp
 )   
 
 add_executable(${TARGET} ${SOURCE_FILE})

@@ -24,7 +24,7 @@ set(TARGET adapter)
 project(${TARGET})
 
 set(SOURCE_FILE 
-    adapter.cpp
+    ${TARGET}.cpp
 )   
 
 add_executable(${TARGET} ${SOURCE_FILE})

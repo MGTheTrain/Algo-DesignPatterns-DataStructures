@@ -24,7 +24,7 @@ set(TARGET observer)
 project(${TARGET})
 
 set(SOURCE_FILE 
-    observer.cpp
+    ${TARGET}.cpp
 )   
 
 add_executable(${TARGET} ${SOURCE_FILE})

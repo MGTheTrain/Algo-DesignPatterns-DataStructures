@@ -24,7 +24,7 @@ set(TARGET dependency-injection)
 project(${TARGET})
 
 set(SOURCE_FILE 
-    dependency-injection.cpp
+    ${TARGET}.cpp
 )   
 
 add_executable(${TARGET} ${SOURCE_FILE})
