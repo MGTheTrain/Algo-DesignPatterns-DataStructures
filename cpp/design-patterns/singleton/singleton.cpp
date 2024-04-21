@@ -23,10 +23,10 @@ public:
     }
 
     /**
-     * @brief Method to display a message indicating the creation of the singleton instance.
+     * @brief Method to display a message
      */
-    void showMessage() {
-        std::cout << "Singleton instance created!" << std::endl;
+    void print() {
+        std::cout << "Test..." << std::endl;
     }
 
 private:
@@ -45,7 +45,7 @@ int main() {
     std::vector<std::thread> threads;
     auto threadFunc = []() {  // Lambda function to be executed by each thread
         std::shared_ptr<Singleton> singleton = Singleton::getInstance();
-        singleton->showMessage();
+        singleton->print();
     };
     for (int i = 0; i < 5; ++i) {
         threads.emplace_back(threadFunc);
