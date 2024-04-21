@@ -17,6 +17,7 @@ public:
     static std::shared_ptr<Singleton> getInstance() {
         std::lock_guard<std::mutex> lock(mutex_);
         if (!instance) {
+            std::cout << "Singleton instance created" << std::endl;
             instance = std::shared_ptr<Singleton>(new Singleton);
         }
         return instance;
