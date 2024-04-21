@@ -38,7 +38,17 @@ class DynamicArray(object):
         self.A[self.n] = ele 
         self.n += 1
 
-    def insert_at(self, item, index):
+    def pop(self):
+        """
+        Removes and returns the last element of the array.
+        """
+        if self.n == 0:
+            raise IndexError('Array is empty')
+        popped_element = self.A[self.n - 1]
+        self.remove_at(self.n - 1)
+        return popped_element
+
+    def insert_at(self, index, item):
         """
         Inserts an item at the specified index.
         """
@@ -85,14 +95,26 @@ def main():
     arr.append(1)
     arr.append(2)
     arr.append(3)
+    arr.insert_at(2, 6)
+    arr.insert_at(1, 9)
     print("Length of the array: ", len(arr))
     print("Element at index 0: ", arr[0])
     print("Element at index 1: ", arr[1])
     print("Element at index 2: ", arr[2])
-    arr.remove_at(1)
+    print("Element at index 3: ", arr[3])
+    print("Element at index 4: ", arr[4])
+    print("\n")
+    arr.pop()
+    arr.pop()
     print("Length of the array: ", len(arr))
     print("Element at index 0: ", arr[0])
     print("Element at index 1: ", arr[1])
+    print("Element at index 2: ", arr[2])
+    print("\n")
+    arr.remove_at(1)
+    arr.remove_at(1)
+    print("Length of the array: ", len(arr))
+    print("Element at index 0: ", arr[0])
 
 if __name__ == "__main__":
     main()
