@@ -14,7 +14,7 @@ Curated list of design patterns, data structures, sort algorithms and their use 
 
 - [ ] Coding design patterns for design principles (e.g. SOLID) and their use cases
 - [ ] Efficient sorting algorithms in terms of complexity 
-- [ ] Common data structures and their use cases
+- [ ] Basic data structures, including their common operations (insertion, deletion, search) and associated complexities, along with practical applications
 
 ## Getting started
 
