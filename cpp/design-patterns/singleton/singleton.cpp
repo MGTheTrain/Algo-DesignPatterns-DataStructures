@@ -1,6 +1,8 @@
 #include <iostream>
 #include <memory>
 #include <mutex>
+#include <thread>
+#include <vector>
 
 /**
  * @brief The Singleton class represents a class of which only one instance can exist.
@@ -40,14 +42,17 @@ private:
 std::shared_ptr<Singleton> Singleton::instance = nullptr; /**< Initialize the singleton instance. */
 std::mutex Singleton::mutex_; /**< Initialize the mutex for thread safety. */
 
-/**
- * @brief The main function demonstrates the use of the Singleton pattern.
- * 
- * @return int Program exit status
- */
 int main() {
-    std::shared_ptr<Singleton> singleton = Singleton::getInstance();
-    singleton->showMessage();
-
+    std::vector<std::thread> threads;
+    auto threadFunc = []() {  // Lambda function to be executed by each thread
+        std::shared_ptr<Singleton> singleton = Singleton::getInstance();
+        singleton->showMessage();
+    };
+    for (int i = 0; i < 5; ++i) {
+        threads.emplace_back(threadFunc);
+    }
+    for (auto& thread : threads) {
+        thread.join();
+    }
     return 0;
 }
