@@ -82,6 +82,34 @@ public:
 };
 
 /**
+ * @brief AnotherConcreteDecorator adds more responsibilities to the component.
+ */
+class AnotherConcreteDecorator : public Decorator {
+public:
+    /**
+     * @brief Construct a new AnotherConcreteDecorator object with the provided Component.
+     * 
+     * @param comp Pointer to the Component object
+     */
+    AnotherConcreteDecorator(std::shared_ptr<Component> comp) : Decorator(comp) {}
+
+    /**
+     * @brief Executes the operation of the wrapped Component and adds more behavior.
+     */
+    void operation() const override {
+        Decorator::operation();
+        addedBehavior();
+    }
+
+    /**
+     * @brief Provides additional behavior in AnotherConcreteDecorator.
+     */
+    void addedBehavior() const {
+        std::cout << "Added behavior in AnotherConcreteDecorator\n";
+    }
+};
+
+/**
  * @brief The main function demonstrates the use of the Decorator pattern.
  * 
  * @return int Program exit status
@@ -90,5 +118,11 @@ int main() {
     std::shared_ptr<Component> component = std::make_shared<ConcreteComponent>();
     std::shared_ptr<Component> decorated = std::make_shared<ConcreteDecorator>(component);
     decorated->operation();
+
+    std::cout << "\n";
+
+    std::shared_ptr<Component> anotherDecorated = std::make_shared<AnotherConcreteDecorator>(component);
+    anotherDecorated->operation();
+
     return 0;
 }
