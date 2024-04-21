@@ -19,7 +19,7 @@ Curated list of design patterns, data structures, array sorting algorithms and t
 | Decorator              | Adding functionality to objects dynamically                    | Open/Closed Principle (OCP)                              | Structural  |
 | Dependency Injection   | Decoupling components, facilitating testing and flexibility    | Dependency Inversion Principle (DIP)                     | Behavioral |
 | Observer               | Implementing event handling, building distributed systems      | Single Responsibility Principle (SRP)                    | Behavioral |
-| Strategy               | Encapsulating algorithms, enabling runtime algorithm selection | Open/Closed Principle (OCP)                              | Behavioral |
+| Strategy               | Encapsulating algorithms enabling runtime algorithm selection instead of having long if-else statements to determine which algorithm to use  | Open/Closed Principle (OCP)                              | Behavioral |
 | Singleton              | Managing resources centrally, ensuring single instance         | Single Responsibility Principle (SRP)                    | Creational |
 | Builder                | Constructing complex objects step by step, maintaining clarity | Single Responsibility Principle (SRP)                    | Creational |
 
