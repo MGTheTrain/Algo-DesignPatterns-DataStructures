@@ -25,7 +25,6 @@ set(CMAKE_CXX_STANDARD 11)
 
 option(BUILD_DATA_STRUCTURE_SAMPLES "Compile source files dealing with data structures" ON)
 option(BUILD_DESIGN_PATTERN_SAMPLES "Compile source files dealing with design patterns" ON)
-option(BUILD_SEARCH_ALGORITHM_SAMPLES "Compile source files dealing with search algorithms" ON) 
 option(BUILD_SORT_ALGORITHM_SAMPLES "Compile source files dealing with sort algorithms" ON) 
 
 if(BUILD_DATA_STRUCTURE_SAMPLES)
@@ -34,10 +33,6 @@ endif()
 
 if(BUILD_DESIGN_PATTERN_SAMPLES)
     add_subdirectory(design-patterns)
-endif()
-
-if(BUILD_SEARCH_ALGORITHM_SAMPLES)
-    add_subdirectory(search-algorithms)
 endif()
 
 if(BUILD_SORT_ALGORITHM_SAMPLES)
