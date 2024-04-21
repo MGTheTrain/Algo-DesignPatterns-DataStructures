@@ -8,7 +8,7 @@
 
 ## Summary
 
-Curated list of design patterns, data structures, array sort algorithms and their use cases
+Curated list of design patterns, data structures, array sorting algorithms and their use cases
 
 ## References
 
