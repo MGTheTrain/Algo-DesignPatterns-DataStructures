@@ -3,8 +3,8 @@
 ## Table of Contents
 
 + [Summary](#summary)
-+ [Features](#features)
 + [References](#references)
++ [Features](#features)
 + [Getting started](#getting-started)
 
 ## Summary
