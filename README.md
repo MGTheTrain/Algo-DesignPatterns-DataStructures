@@ -16,7 +16,7 @@ Curated list of design patterns, data structures, array sorting algorithms and t
 | Design Pattern         | Practical Use Cases                                            | SOLID Principles and Other Relevant Principles           | Category    |
 |------------------------|----------------------------------------------------------------|----------------------------------------------------------|-------------|
 | Adapter                | Integrating incompatible interfaces, adapting legacy code      | Dependency Inversion Principle (DIP)                     | Structural  |
-| Decorator              | Adding functionality to objects dynamically                    | Open/Closed Principle (OCP)                              | Structural  |
+| Decorator              | Adding functionality to objects dynamically without changing existing logic                   | Open/Closed Principle (OCP)                              | Structural  |
 | Dependency Injection   | Decoupling components, facilitating testing and flexibility    | Dependency Inversion Principle (DIP)                     | Behavioral |
 | Observer               | Implementing event handling, building distributed systems      | Single Responsibility Principle (SRP)                    | Behavioral |
 | Strategy               | Encapsulating algorithms enabling runtime algorithm selection instead of having long if-else statements to determine which algorithm to use  | Open/Closed Principle (OCP)                              | Behavioral |
