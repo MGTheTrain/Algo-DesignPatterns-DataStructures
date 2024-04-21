@@ -89,11 +89,11 @@ int main() {
     std::unique_ptr<Strategy> strat1 = std::make_unique<ConcreteStrategy1>();
     std::unique_ptr<Strategy> strat2 = std::make_unique<ConcreteStrategy2>();
 
-    Context context(std::move(strat1));
-    context.executeStrategy();
+    std::unique_ptr<Context> context = std::make_unique<Context>(std::move(strat1));
+    context->executeStrategy();
 
-    context.setStrategy(std::move(strat2));
-    context.executeStrategy();
+    context->setStrategy(std::move(strat2));
+    context->executeStrategy();
 
     return 0;
 }

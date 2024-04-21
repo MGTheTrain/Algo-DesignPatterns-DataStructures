@@ -64,7 +64,7 @@ public:
  */
 int main() {
     std::unique_ptr<Service> service = std::make_unique<ConcreteService>();
-    Client client(std::move(service));
-    client.doSomething();
+    std::unique_ptr<Client> client = std::make_unique<Client>(std::move(service));
+    client->doSomething();
     return 0;
 }

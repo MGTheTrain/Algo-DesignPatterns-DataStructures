@@ -64,7 +64,7 @@ public:
  */
 int main() {
     std::unique_ptr<Adaptee> adaptee = std::make_unique<Adaptee>();
-    Adapter adapter(std::move(adaptee));
-    adapter.request();
+    std::unique_ptr<Adapter> adapter = std::make_unique<Adapter>(std::move(adaptee));
+    adapter->request();
     return 0;
 }
