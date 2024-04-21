@@ -11,4 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-TBD
+- [Feature] - Coding design patterns for design principles (e.g. SOLID) and their use cases in C++
