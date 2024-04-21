@@ -18,4 +18,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# TBD
+cmake_minimum_required(VERSION 3.10)
+
+set(TARGET adapter)
+project(${TARGET})
+
+set(SOURCE_FILE 
+    adapter.cpp
+)   
+
+add_executable(${TARGET} ${SOURCE_FILE})
+install(TARGETS ${TARGET})
